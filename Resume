@@ -33,7 +33,7 @@
     var app = new Vue({
       el: '#app',
       data: {
-        name: 'Felix Dadebo',
+        name: 'Flex Design',
         Aspiration: 'Aspiring Web Developer +                UX/Ui Designer',
         Major:'Currently a Junior in the college                of IST majoring in Human Centered                     Design and development.',
         Skills: 'Skills',
