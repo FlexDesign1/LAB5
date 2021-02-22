@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name | Resume</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+    <!-- // Intro -->
+    <header>
+		<div class="content-wrap">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+       <img src="https://i.imgur.com/8FFd86x.png" title="source: imgur.com" class=" col-narrow profile-img" alt="Your Name">
+      
+			<div class="col-wide">
+       
+        
+    <div id="app">
+    <h1>{{name}}</h1>
+				<h2>{{Aspiration}}</h2>
+				<p>{{Major}}</p>
+        <h3>{{Skills}}</h3>
+        <ul>
+          <li id= "LClass" v-for = "Skills in List">{{Skills}}
+          </li> 
+         </ul>
+  </div>
+      </div>
+   </header>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        name: 'Felix Dadebo',
+        Aspiration: 'Aspiring Web Developer +                UX/Ui Designer',
+        Major:'Currently a Junior in the college                of IST majoring in Human Centered                     Design and development.',
+        Skills: 'Skills',
+        List: [
+                 "HTML",
+                 "Node",
+                "JavaScript", 
+                 "CSS"   ],
+        
+       
+        
+      } 
+    });
+  </script>   
+</body>
+</html>
